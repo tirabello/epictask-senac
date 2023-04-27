@@ -57,157 +57,54 @@
 
     <main class="container">
 
-        <div class="row mt-2">
-            <div class="col">
-                <input type="text" class="form-control" placeholder="Título" aria-label="Título">
-            </div>
-            <div class="col">
-                <input type="text" class="form-control" placeholder="Pontos" aria-label="Pontos">
-            </div>
-            <div class="col-4">
-                <select class="form-select" aria-label="Selecione a categoria">
-                    <option selected>Selecione a categoria</option>
-                    <option value="1">Estudos</option>
-                    <option value="2">Trabalho</option>
-                    <option value="3">Lazer</option>
-                </select>
-            </div>
-            <div class="col">
-                <button type="button" class="btn btn-primary">Salvar</button>
-            </div>
-        </div>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Cadastrar Tarefa
+        </button>
 
-        <div class="row">
+        <div id="tarefas" class="row mx-auto my-2 g-3">
+        </div> <!--row-->
 
-            <div class="card col-lg-3 col-md-6 col-sm-12">
-                <div class="card-header">
-                    Estudar JS
-                </div>
-                <div class="card-body">
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <p class="card-text">Estudos</p>
-                    <span class="badge text-bg-warning">150pt</span>
-                </div>
-    
-                <div class="card-footer">
-                    <a href="#" class="btn btn-success" title="marcar como concluída">
-                        <i class="bi bi-check-circle"></i>
-                    </a>
-                    <a href="#" class="btn btn-danger" title="apagar tarefa">
-                        <i class="bi bi-x-circle"></i>
-                    </a>
-                </div>
-    
-            </div>
-
-            <div class="card col-lg-3 col-md-6 col-sm-12">
-                <div class="card-header">
-                    Estudar JS
-                </div>
-                <div class="card-body">
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <p class="card-text">Estudos</p>
-                    <span class="badge text-bg-warning">150pt</span>
-                </div>
-    
-                <div class="card-footer">
-                    <a href="#" class="btn btn-success" title="marcar como concluída">
-                        <i class="bi bi-check-circle"></i>
-                    </a>
-                    <a href="#" class="btn btn-danger" title="apagar tarefa">
-                        <i class="bi bi-x-circle"></i>
-                    </a>
-                </div>
-    
-            </div>  
-
-            <div class="card col-lg-3 col-md-6 col-sm-12">
-                <div class="card-header">
-                    Estudar JS
-                </div>
-                <div class="card-body">
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <p class="card-text">Estudos</p>
-                    <span class="badge text-bg-warning">150pt</span>
-                </div>
-    
-                <div class="card-footer">
-                    <a href="#" class="btn btn-success" title="marcar como concluída">
-                        <i class="bi bi-check-circle"></i>
-                    </a>
-                    <a href="#" class="btn btn-danger" title="apagar tarefa">
-                        <i class="bi bi-x-circle"></i>
-                    </a>
-                </div>
-    
-            </div>  
-              
-            <div class="card col-lg-3 col-md-6 col-sm-12">
-                <div class="card-header">
-                    Estudar JS
-                </div>
-                <div class="card-body">
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <p class="card-text">Estudos</p>
-                    <span class="badge text-bg-warning">150pt</span>
-                </div>
-    
-                <div class="card-footer">
-                    <a href="#" class="btn btn-success" title="marcar como concluída">
-                        <i class="bi bi-check-circle"></i>
-                    </a>
-                    <a href="#" class="btn btn-danger" title="apagar tarefa">
-                        <i class="bi bi-x-circle"></i>
-                    </a>
-                </div>
-    
-            </div>
-
-            <div class="card col-lg-3 col-md-6 col-sm-12">
-                <div class="card-header">
-                    Estudar JS
-                </div>
-                <div class="card-body">
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <p class="card-text">Estudos</p>
-                    <span class="badge text-bg-warning">150pt</span>
-                </div>
-    
-                <div class="card-footer">
-                    <a href="#" class="btn btn-success" title="marcar como concluída">
-                        <i class="bi bi-check-circle"></i>
-                    </a>
-                    <a href="#" class="btn btn-danger" title="apagar tarefa">
-                        <i class="bi bi-x-circle"></i>
-                    </a>
-                </div>
-    
-            </div>  
-
-            <div class="card col-lg-3 col-md-6 col-sm-12">
-                <div class="card-header">
-                    Estudar JS
-                </div>
-                <div class="card-body">
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <p class="card-text">Estudos</p>
-                    <span class="badge text-bg-warning">150pt</span>
-                </div>
-    
-                <div class="card-footer">
-                    <a href="#" class="btn btn-success" title="marcar como concluída">
-                        <i class="bi bi-check-circle"></i>
-                    </a>
-                    <a href="#" class="btn btn-danger" title="apagar tarefa">
-                        <i class="bi bi-x-circle"></i>
-                    </a>
-                </div>
-    
-            </div>    
-            
-        </div>
 
     </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Cadastrar Tarefa</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row mt-2 g-3">
+                        <div class="col-12">
+                            <input id="titulo" type="text" class="form-control" placeholder="Título"
+                                aria-label="Título">
+                        </div>
+                        <div class="col-12">
+                            <input id="pontos" type="number" class="form-control" placeholder="Pontos"
+                                aria-label="Pontos">
+                        </div>
+                        <div class="col-12">
+                            <select id="categoria" class="form-select" aria-label="Selecione a categoria">
+                                <option selected>Selecione a categoria</option>
+                                <option value="estudos">Estudos</option>
+                                <option value="trabalho">Trabalho</option>
+                                <option value="lazer">Lazer</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button id="salvar" type="button" class="btn btn-primary">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/crud.js"></script>
 
 </body>
 
